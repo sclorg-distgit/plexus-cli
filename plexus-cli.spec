@@ -37,7 +37,7 @@
 
 Name:           %{?scl_prefix}%{pkg_name}
 Version:        1.2
-Release:        20.11%{?dist}
+Release:        20.12%{?dist}
 Epoch:          0
 Summary:        Command Line Interface facilitator for Plexus
 License:        ASL 2.0
@@ -56,7 +56,7 @@ BuildArch:      noarch
 
 BuildRequires:  %{?scl_prefix_java_common}javapackages-tools
 BuildRequires:  %{?scl_prefix_java_common}junit
-BuildRequires:  %{?scl_prefix_java_common}maven-local
+BuildRequires:  %{?scl_prefix}maven-local
 BuildRequires:  %{?scl_prefix}maven-compiler-plugin
 BuildRequires:  %{?scl_prefix}maven-install-plugin
 BuildRequires:  %{?scl_prefix}maven-jar-plugin
@@ -116,6 +116,9 @@ set -e -x
 %doc LICENSE-2.0.txt
 
 %changelog
+* Mon Feb 08 2016 Michal Srb <msrb@redhat.com> - 0:1.2-20.12
+- Fix BR on maven-local & co.
+
 * Mon Jan 11 2016 Michal Srb <msrb@redhat.com> - 0:1.2-20.11
 - maven33 rebuild #2
 
