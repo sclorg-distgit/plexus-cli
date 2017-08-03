@@ -3,7 +3,7 @@
 
 Name:           %{?scl_prefix}plexus-cli
 Version:        1.6
-Release:        4.1%{?dist}
+Release:        4.2%{?dist}
 Epoch:          0
 Summary:        Command Line Interface facilitator for Plexus
 License:        ASL 2.0
@@ -54,6 +54,9 @@ cp -p %{SOURCE1} .
 %license LICENSE-2.0.txt
 
 %changelog
+* Thu Jun 22 2017 Michael Simacek <msimacek@redhat.com> - 0:1.6-4.2
+- Mass rebuild 2017-06-22
+
 * Wed Jun 21 2017 Java Maintainers <java-maint@redhat.com> - 0:1.6-4.1
 - Automated package import and SCL-ization
 
